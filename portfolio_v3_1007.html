@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<mjaa charsja="UTF-8">
+	<title>Johnny's journey</title>
+	<link rel="stylesheet" type="text/css" href="./common.css" />
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+</head>
+<script>
+$(document).ready(function(){
+
+/*------------stickynavi-------------------*/
+	class StickyNavigation {
+	
+	constructor() {
+		this.currentId = null;
+		this.currentTab = null;
+		this.tabContainerHeight = 70;
+		let self = this;
+		$('.ja-main-tab').click(function() { 
+			self.onTabClick(event, $(this)); 
+		});
+		$(window).scroll(() => { this.onScroll(); });
+		$(window).resize(() => { this.onResize(); });
+	}
+	
+	onTabClick(event, element) {
+		event.preventDefault();
+		let scrollTop = $(element.attr('href')).offset().top - this.tabContainerHeight + 1;
+		$('html, body').animate({ scrollTop: scrollTop }, 600);
+	}
+	
+	onScroll() {
+		this.checkTabContainerPosition();
+    this.findCurrentTabSelector();
+	}
+	
+	onResize() {
+		if(this.currentId) {
+			this.setSliderCss();
+		}
+	}
+	
+	checkTabContainerPosition() {
+		let offset = $('.ja-main-tabs').offset().top + $('.ja-main-tabs').height() - this.tabContainerHeight;
+		if($(window).scrollTop() > offset) {
+			$('.ja-main-tabs-container').addClass('ja-main-tabs-container--top');
+		} 
+		else {
+			$('.ja-main-tabs-container').removeClass('ja-main-tabs-container--top');
+		}
+	}
+	
+	findCurrentTabSelector(element) {
+		let newCurrentId;
+		let newCurrentTab;
+		let self = this;
+		$('.ja-main-tab').each(function() {
+			let id = $(this).attr('href');
+			let offsetTop = $(id).offset().top - self.tabContainerHeight;
+			let offsetBottom = $(id).offset().top + $(id).height() - self.tabContainerHeight;
+			if($(window).scrollTop() > offsetTop && $(window).scrollTop() < offsetBottom) {
+				newCurrentId = id;
+				newCurrentTab = $(this);
+			}
+		});
+		if(this.currentId != newCurrentId || this.currentId === null) {
+			this.currentId = newCurrentId;
+			this.currentTab = newCurrentTab;
+			this.setSliderCss();
+		}
+	}
+	
+	setSliderCss() {
+		let width = 0;
+		let left = 0;
+		if(this.currentTab) {
+			width = this.currentTab.css('width');
+			left = this.currentTab.offset().left;
+		}
+		$('.ja-main-tab-slider').css('width', width);
+		$('.ja-main-tab-slider').css('left', left);
+	}
+	
+}
+
+new StickyNavigation();
+
+
+/*------------mousemove-------------------*/
+  var mouseX, mouseY;
+  var ww = $( window ).width();
+  var wh = $( window ).height();
+  var traX, traY;
+  $(document).mousemove(function(e){
+    mouseX = e.pageX;
+    mouseY = e.pageY;
+    traX = ((4 * mouseX) / 570) + 40;
+    traY = ((4 * mouseY) / 570) + 50;
+    console.log(traX);
+    $(".title").css({"background-position": traX + "%" + traY + "%"});
+  });
+
+
+
+});	//end 
+
+</script>
+<style>
+	
+
+</style>
+<body>
+<!-- Main -->
+	<section class="ja-main-tabs" id="main_top">
+	    <div id="intro">
+	    	<div class="title">Johnny's Journey</div>
+	    	<div class="Iam">
+				<p>Hi, I am jiahn.</p></br>
+				<b><div class="innerIam"><span>Developer</span><br/>Designer<br/>web publisher
+				    </div></b>
+			</div>
+		</div>
+
+	    <div class="ja-main-tabs-container">
+	    	<a class="ja-main-tab" href="#main_top"><img src="./images/logo/jj_main.png"/></a>
+		    <a class="ja-main-tab" href="#tab-about">about</a>
+		    <a class="ja-main-tab" href="#tab-work">work</a>
+		    <a class="ja-main-tab" href="#tab-contact">contact</a>
+		    <span class="ja-main-tab-slider"></span>
+	    </div>
+	</section>
+
+<!-- SUB -->
+<main class="ja-main">
+    <section class="ja-slide" id="tab-about">
+	    <h1>about me</h1>
+	    <h3></h3>
+	    <div class="about_me">
+	    	<p>Find out who I am, where I'm from and what I'm all about.</p>
+	    	<img src="" alt="myphoto"/>
+	    	
+	    </div>
+	    <div class="skills">
+	    	
+	    </div>
+    </section>
+    <section class="ja-slide" id="tab-work">
+	    <h1>work</h1>
+	    <h3></h3>
+    </section>
+    <section class="ja-slide" id="tab-contact">
+	    <h1>contact</h1>
+	    <h3></h3>
+	    <form action="">
+	    	<input type="text" />
+			<input type="button" name="submit"/>
+	    </form>
+	    
+    </section>
+
+</main>
+
+</body>
+</html>
