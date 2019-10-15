@@ -6,6 +6,8 @@
 	<link rel="stylesheet" type="text/css" href="./common.css" />
 	<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<script src="https://use.fontawesome.com/4bfd4d250a.js"></script>
+
 </head>
 <script>
 $(document).ready(function(){
@@ -102,7 +104,14 @@ new StickyNavigation();
     $(".title").css({"background-position": traX + "%" + traY + "%"});
   });
 
+/*-------smooth scroll------------*/	
 
+	$(".scroll_down").click(function() {
+		var scrollPosition = $("#tab-about").offset().top;
+ 
+		$("html,body").animate({
+        scrollTop: scrollPosition}, 500);
+	});
 
 });	//end 
 
@@ -121,8 +130,10 @@ new StickyNavigation();
 				<b><div class="innerIam"><span>Developer</span><br/>Designer<br/>web publisher
 				    </div></b>
 			</div>
+			<div class="scroll_down button"><a href="#tab-about"><span></span>Scroll</a></div>
 		</div>
 
+<!-- MENU -->	
 	    <div class="ja-main-tabs-container">
 	    	<a class="ja-main-tab" href="#main_top"><img src="./images/logo/jj_main.png"/></a>
 		    <a class="ja-main-tab" href="#tab-about">about</a>
@@ -131,6 +142,7 @@ new StickyNavigation();
 		    <span class="ja-main-tab-slider"></span>
 	    </div>
 	</section>
+
 
 <!-- SUB -->
 <main class="ja-main">
