@@ -233,7 +233,38 @@ a {
     opacity: 0;
   }
 }
-  /*------------------inner Iam---------------------------------*/
+
+/*----------scroll_top button--------------------------*/
+
+#scroll_top {
+  background:none;
+  border:0px;
+  position:fixed;
+  bottom:0px;
+  right:20px;
+  opacity:0.3;
+  transition:0.5s;
+  z-index:100;
+}
+#scroll_top .fa {
+  color:#000;
+  font-size:4em;
+}
+#scroll_top:focus {outline:0 !important;}
+#scroll_top:hover {
+  transition:0.5s;
+  opacity:0.8;
+  /*
+  transform:rotateY(180deg);
+  -webkit-transform: rotateY(180deg);
+  -ms-transform:rotateY(180deg); /* IE 9 */
+  /* -moz-transform:rotateY(180deg); /* Firefox */
+  /* -o-transform:rotateY(180deg); /* Opera */
+}
+
+
+
+ /*------------------inner Iam---------------------------------*/
   .Iam {
   padding: 2em 5em;
   //font: normal 40px/50px Montserrat, sans-serif;
