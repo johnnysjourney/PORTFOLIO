@@ -8,8 +8,14 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 	<script src="https://use.fontawesome.com/4bfd4d250a.js"></script>
 	<script src="./scripts/jquery.easeScroll.js"></script>
+
 	<link rel="stylesheet" type="text/css" href="promotion.css"/>
+	<link rel="stylesheet" type="text/css" href="contact.css"/>
+	<link rel="stylesheet" type="text/css" href="about.css"/>
+
+
 	<script src="promotion.js"></script>
+
 
 </head>
 <script>
@@ -134,6 +140,12 @@ new StickyNavigation();
 	});
 
 
+
+/*----------------------work---------------------------------*/
+
+
+
+
 });	//end 
 
 </script>
@@ -142,7 +154,7 @@ new StickyNavigation();
 
 </style>
 <body>
-<!-- Main -->
+<!------------------------------- Main ----------------------------->
 	<section class="ja-main-tabs" id="main_top">
 		<button id="scroll_top"><i class="fa fa-arrow-circle-up" aria-hidden="true"></i></button>
 	    <div id="intro">
@@ -155,7 +167,7 @@ new StickyNavigation();
 			<div class="scroll_down button"><a href="#tab-about"><span></span>Scroll</a></div>
 		</div>
 
-<!-- MENU -->	
+<!------------------------- MENU ---------------------------->	
 	    <div class="ja-main-tabs-container">
 	    	<a class="ja-main-tab" href="#main_top"><img src="./images/logo/jj_main.png"/></a>
 		    <a class="ja-main-tab" href="#tab-about">about</a>
@@ -166,80 +178,305 @@ new StickyNavigation();
 	</section>
 
 <!-- SUB -->
-<!--ABOUT-->
+<!------------------------ABOUT--------------------------->
 <main class="ja-main">
     <section class="ja-slide" id="tab-about">
-	    <h1>about me</h1>
+	    <h1 class="title">about me</h1>
 	    <h3></h3>
-	    <div class="about_me">
-	    	<p>Find out who I am, where I'm from and what I'm all about.</p>
-	    	<img src="" alt="myphoto"/>
-	    	
+	    <p class="about_text">Find out who I am, where I'm from and what I'm all about.</p>
+	    <div class="intro">
+	    	<div class="about_me">
+	    		<img src="./images/ja.jpg" alt="myphoto"/>
+	    		<span class="about text"></span>
+	    		<div class="img_text">안녕하세요. 발전을 위해 노력하는 김지안입니다.<br />
+	    			클라이언트의 요구에 맞는<br />
+	    			보기 좋은 디자인과 깔끔한 코딩을 지향합니다.<br />
+
+	    		</div>
+	   
+
+		    </div>
+		    <div class="skills">
+		    		<span class="skills_title">skills</span>
+		    		<div class="ab_r">
+
+                    
+	                    <div class="percent_wrap">
+	                       
+	                        <div class="progress-circle over50 p88">
+	                           <span>Photoshop</span>
+	                           <div class="left-half-clipper">
+	                              <div class="first50-bar"></div>
+	                              <div class="value-bar"></div>
+	                           </div>
+	                        </div>
+	                        
+	                        <div class="progress-circle over50 p86">
+	                           <span>Illustrator</span>
+	                           <div class="left-half-clipper">
+	                              <div class="first50-bar"></div>
+	                              <div class="value-bar"></div>
+	                           </div>
+	                        </div>
+	                        
+	                        <div class="progress-circle over50 p90">
+	                           <span>HTML5</span>
+	                           <div class="left-half-clipper">
+	                              <div class="first50-bar"></div>
+	                              <div class="value-bar"></div>
+	                           </div>
+	                        </div>
+	                        
+	                        <div class="progress-circle over50 p88">
+	                           <span>CSS</span>
+	                           <div class="left-half-clipper">
+	                              <div class="first50-bar"></div>
+	                              <div class="value-bar"></div>
+	                           </div>
+	                        </div>
+	                        
+	                        <div class="progress-circle p45">
+	                           <span>Javascript</span>
+	                           <div class="left-half-clipper">
+	                              <div class="first50-bar"></div>
+	                              <div class="value-bar"></div>
+	                           </div>
+	                        </div>
+	                        
+	                        <div class="progress-circle over50 p50">
+	                           <span>jQuary</span>
+	                           <div class="left-half-clipper">
+	                              <div class="first50-bar"></div>
+	                              <div class="value-bar"></div>
+	                           </div>
+                       		 </div>
+                        
+                    </div><!--//percent_wrap-->
+
+            </div><!-- //ab_r -->
+		    		<ul class="skills list">
+		    			<li class="skill name1">HTML5</li>
+		    			<li class="skill name2">CSS</li>
+		    			<li class="skill name3">JavaScript</li>
+		    			<li class="skill name4">jQuery</li>
+		    			<li class="skill name5">Java</li>
+		    			<li class="skill name6">Oracle</li>
+		    			<li class="skill name7">MySQL</li>
+		    			<li class="skill name8">Photoshop</li>
+		    			<li class="skill name9">illustrator</li>
+		    		</ul>
+		    </div>
+
+
+
 	    </div>
-	    <div class="skills">
-	    	
-	    </div>
+	    
     </section>
-<!--work-->
+<!----------------------------work---------------------------->
     <section class="ja-slide" id="tab-work">
-	    <h1>work</h1>
+	    <h1 class="title">work</h1>
 	    <h3></h3>
 	    <nav>
-        	<span><a href="#">WEB SITE<span class="row"></span></a></span>
-            <span><a href="#">PROMOTION<span class="row"></span></a></span>
+        	<span class="category">WEB SITE<span class="row"></span></span>
+            <span class="category">PROMOTION<span class="row"></span></span>
         </nav>
 	    <section>
         	<div id="section_wrap">
-        		
-            	<div class="div_1th">
+            	<!--div class="div_1th">
             		<div class="div_2th-1"></div>
             		<div class="div_2th m1"></div>
-            		<div class="div_3th"><p>#web page #web design</p></div>
-                	<a href="#">
-                		<div class="div_4th div_4th_1">
+            		<div class="div_3th"><p>#web design</p></div>
+                	<div class="div_4th div_4th_1">
                 		<div class="div_5th"><img src="images/promo/bc_9.jpg"/></div>
-                		<p>view details</p></div>
-                	</a>
+                		<p class="view_details">view details</p>
+                	</div>
             	</div>
-                
-                <div class="div_1th"><div class="div_2th-1"></div><div class="div_2th m2"></div><div class="div_3th"><p>#web page #web design</p></div>
-                <a href="#"><div class="div_4th div_4th_1"><div class="div_5th"><img src="images/promo/kb_5.jpg"/></div>
-                <p>view details</p></div></a></div>
-                
-                <div class="div_1th"><div class="div_2th-1"></div><div class="div_2th m3"></div><div class="div_3th"><p>#web page #web design</p></div>
-                <a href="#"><div class="div_4th div_4th_1"><div class="div_5th"><img src="images/promo/ja_5.jpg"/></div>
-                <p>view details</p></div></a></div>
-                
-                <div class="div_1th"><div class="div_2th-1"></div><div class="div_2th m4"></div><div class="div_3th"><p>#web page #web design</p></div>
-                <a href="#"><div class="div_4th div_4th_1"><div class="div_5th"><img src="images/promo/gam_8.jpg"/></div>
-                <p>view details</p></div></a></div>
-                
-                <div class="div_1th"><div class="div_2th-1"></div><div class="div_2th m5"></div><div class="div_3th"><p>#web page #web design</p></div>
-                <a href="#"><div class="div_4th div_4th_1"><div class="div_5th"><img src="images/promo/s_6.jpg"/></div>
-                <p>view details</p></div></a></div>
-                
-                
-                
-                	<div class="popup">
-                	<!--<img src="images/logo.png" id="img_logo"/>-->
-                    <a href="#">
-                    	<img src="images/popup_close.png" id="img_bt"/>
-                    </a>
-                		<div class="popup_img">
-                    	<img src="images/promo/bc_9.jpg" id="img_main" width="630px"/>
-                   		</div>
-    
-        	</div>
+            	<div class="div_1th">
+            		<div class="div_2th-1"></div>
+            		<div class="div_2th m2"></div>
+            		<div class="div_3th"><p>#web design</p></div>
+                	<div class="div_4th div_4th_1">
+                		<div class="div_5th"><img src="images/promo/kb_5.jpg"/></div>
+                		<p class="view_details">view details</p>
+                	</div>
+            	</div>
+
+                <div class="div_1th">
+            		<div class="div_2th-1"></div>
+            		<div class="div_2th m3"></div>
+            		<div class="div_3th"><p>#web design</p></div>
+                	<div class="div_4th div_4th_1">
+                		<div class="div_5th"><img src="images/promo/kb_5.jpg"/></div>
+                		<p class="view_details">view details</p>
+                	</div>
+            	</div>
+            	<div class="div_1th">
+            		<div class="div_2th-1"></div>
+            		<div class="div_2th m4"></div>
+            		<div class="div_3th"><p>#web design</p></div>
+                	<div class="div_4th div_4th_1">
+                		<div class="div_5th"><img src="images/promo/gam_8.jpg"/></div>
+                		<p class="view_details">view details</p>
+                	</div>
+            	</div>
+            	<div class="div_1th">
+            		<div class="div_2th-1"></div>
+            		<div class="div_2th m5"></div>
+            		<div class="div_3th"><p>#web design</p></div>
+                	<div class="div_4th div_4th_1">
+                		<div class="div_5th"><img src="images/promo/s_6.jpg"/></div>
+                		<p class="view_details">view details</p>
+                	</div>
+            	</div-->
+
+            	<!------------------list--------------------->
+				<ul>
+                <li class="div_1th">
+            		<div class="div_2th-1"></div>
+            		<div class="div_2th m1"></div>
+            		<div class="div_3th"><p>#web design</p></div>
+                	<div class="div_4th div_4th_1">
+                		<div class="div_5th"><img src="images/promo/bc_9.jpg"/></div>
+                		<p class="view_details">view details</p>
+                	</div>
+            	</li>
+            	<li class="div_1th">
+            		<div class="div_2th-1"></div>
+            		<div class="div_2th m2"></div>
+            		<div class="div_3th"><p>#web design</p></div>
+                	<div class="div_4th div_4th_1">
+                		<div class="div_5th"><img src="images/promo/kb_5.jpg"/></div>
+                		<p class="view_details">view details</p>
+                	</div>
+            	</li>
+
+                <li class="div_1th">
+            		<div class="div_2th-1"></div>
+            		<div class="div_2th m3"></div>
+            		<div class="div_3th"><p>#web design</p></div>
+                	<div class="div_4th div_4th_1">
+                		<div class="div_5th"><img src="images/promo/ja_5.jpg"/></div>
+                		<p class="view_details">view details</p>
+                	</div>
+            	</li>
+            	<li class="div_1th">
+            		<div class="div_2th-1"></div>
+            		<div class="div_2th m4"></div>
+            		<div class="div_3th"><p>#web design</p></div>
+                	<div class="div_4th div_4th_1">
+                		<div class="div_5th"><img src="images/promo/gam_8.jpg"/></div>
+                		<p class="view_details">view details</p>
+                	</div>
+            	</li>
+            	<li class="div_1th">
+            		<div class="div_2th-1"></div>
+            		<div class="div_2th m5"></div>
+            		<div class="div_3th"><p>#web design</p></div>
+                	<div class="div_4th div_4th_1">
+                		<div class="div_5th"><img src="images/promo/s_6.jpg"/></div>
+                		<p class="view_details">view details</p>
+                	</div>
+            	</li>
+            	<li class="div_1th">
+            		<div class="div_2th-1"></div>
+            		<div class="div_2th m6"></div>
+            		<div class="div_3th"><p>#web design #web publishing</p></div>
+                	<div class="div_4th div_4th_1">
+                		<div class="div_5th"><img src="images/promo/wp_msf_s.jpg"/></div>
+                		<p class="view_details">view details</p>
+                	</div>
+            	</li>
+            	<li class="div_1th">
+            		<div class="div_2th-1"></div>
+            		<div class="div_2th m7"></div>
+            		<div class="div_3th"><p>#web design #web publishing</p></div>
+                	<div class="div_4th div_4th_1">
+                		<div class="div_5th"><img src="images/promo/wp_thinkcoffee_s.jpg"/></div>
+                		<p class="view_details">view details</p>
+                	</div>
+            	</li>
+            	<li class="div_1th">
+            		<div class="div_2th-1"></div>
+            		<div class="div_2th m8"></div>
+            		<div class="div_3th"><p>#web design #web publishing</p></div>
+                	<div class="div_4th div_4th_1">
+                		<div class="div_5th"><img src="images/promo/wp_kingsman_s.jpg"/></div>
+                		<p class="view_details">view details</p>
+                	</div>
+            	</li>
+            	<li class="div_1th">
+            		<div class="div_2th-1"></div>
+            		<div class="div_2th m9"></div>
+            		<div class="div_3th"><p>#web design #web pubilshing</p></div>
+                	<div class="div_4th div_4th_1">
+                		<div class="div_5th"><img src="images/promo/wp_camping_s.jpg"/></div>
+                		<p class="view_details">view details</p>
+                	</div>
+            	</li>
+
+            </ul>
+                <!--팝업박스-->
+                	<div id="popup_box01">
+	                	<div class="img_box">
+	                		<div id="close"><i class="fa fa-times" aria-hidden="true"></i></div>
+	                    	<img src="images/promo/bc_9.jpg" />
+	                   	</div>
+
+					</div>
+			</div>
         </section>
     </section>
- <!--contact-->
+ <!----------------------------------contact------------------------------------->
     <section class="ja-slide" id="tab-contact">
-	    <h1>contact</h1>
-	    <h3></h3>
-	    <form action="">
-	    	<input type="text" />
-			<input type="button" name="submit"/>
-	    </form>
+    	<h1 class="title">contact me</h1>
+		<div class="container-contact2">
+			<div class="wrap-contact2">
+				<form class="contact2-form validate-form">
+					<span class="contact2-form-title">
+						Say Hello or Want to work together?
+					</span>
+					<div class="contact2_mine"> 
+						<div class="phone">+82 10 7794 0609</div>
+						<div class="email">
+							<div id="emailAddress" class="emailAddress">252_forever@daum.net</div>
+						</div>
+						<div class="resume">
+							<p>Read my resume here:</p>
+							<div class="resumecheck">
+								<a href="" class="git" target="_blank">Github</a>
+								<a href="http://www.daum.net" class="pdf" target="_blank">PDF</a>
+							</div>
+						</div>
+					</div>
+					
+
+					<div class="wrap-input2 validate-input" data-validate="Name is required">
+						<input class="input2" type="text" name="name">
+						<span class="focus-input2" data-placeholder="NAME"></span>
+					</div>
+
+					<div class="wrap-input2 validate-input" data-validate = "Valid email is required: ex@abc.xyz">
+						<input class="input2" type="text" name="email">
+						<span class="focus-input2" data-placeholder="EMAIL"></span>
+					</div>
+
+					<div class="wrap-input2 validate-input" data-validate = "Message is required">
+						<textarea class="input2" name="message"></textarea>
+						<span class="focus-input2" data-placeholder="MESSAGE"></span>
+					</div>
+
+					<div class="container-contact2-form-btn">
+						<div class="wrap-contact2-form-btn">
+							<div class="contact2-form-bgbtn"></div>
+							<button class="contact2-form-btn">
+								Send Your Message
+							</button>
+						</div>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
 	    
     </section>
 

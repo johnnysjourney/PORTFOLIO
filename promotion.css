@@ -70,6 +70,7 @@
 }
 nav {
 	//height:50px;
+	//background:#e5e5e5;
 	border-bottom:1px solid #ececec;
 	text-align:center;
 	padding:20px;
@@ -94,6 +95,7 @@ nav span .row {
 	padding:0px 4px;
 	margin-left:5px;
 }
+
 
 
 #section_wrap {
@@ -131,6 +133,7 @@ nav span .row {
 	background-color:hsla(0,0%,0%,0.7);
 	display:none;
 }
+
 .m1 {
 	background:url(images/promo/img_16.png);	
 	//border:1px solid red;
@@ -151,7 +154,18 @@ nav span .row {
 .m5 {
 	background:url(images/promo/img_05.png);	
 }
-
+.m6 {
+	background:url(images/promo/img_10.png);	
+}
+.m7 {
+	background:url(images/promo/thinkcoffee.png);	
+}
+.m8 {
+	background:url(images/promo/kingsman.png);	
+}
+.m9 {
+	background:url(images/promo/camping.png);	
+}
 
 
 	
@@ -172,27 +186,29 @@ nav span .row {
 	padding-top:5px;
 }
 
-.div_3th p {
+.div_3th {
 	font-size:14px;	
+	
 }
-
+.view_details{cursor: pointer;}
 #section_wrap .div_1th .div_4th p{
 	position:absolute;
 	top:110px;
-	left:90px;
+	left:70px;
 	padding:10px 35px 3px 35px;
 	text-align:center;
 	font-size:12pt;	
 	border:3px solid #fff;
 	color:#fff;
 	display:none;
+	//text-transform: uppercase;
 }
 
 /*클릭 시 뜨는 팝업창*/
 
 .div_5th {
 	display:none;	
-}
+}/*
 .popup {
 	width:680px;
 	height:786px;
@@ -224,8 +240,69 @@ nav span .row {
 	top:30px;
 	left:20px;
 	overflow:auto;
-	//border:1px solid red;		
+	//border:1px solid red;		*/
 }
+
+/*---------------팝업박스----------------------*/
+/*팝업상자*/
+#popup_box01 {
+	//width:700px;
+	//height:750px;
+	//background:hsla(0,0%,100%,0.9);
+	//position:fixed;
+	//top:500px;
+	//left:500px;
+	text-align:center;	
+	display:none;
+	left:50%;
+	top:50%;
+	margin-left:-350px;
+	margin-top:-375px;
+}
+#close {
+	//border:1px solid #000;	
+	//width:700px;
+	//height:36px;
+	//background:url(images/popup_close.png) no-repeat top right;
+	cursor: pointer;
+}
+
+#close>.fa {
+	//border:1px solid #000;
+	color:black;
+	font-size:2em;
+	//position:absolute;
+	//top:15px;
+	//right:10px;
+	letter-spacing: 50%;
+	text-shadow:1px 1px #eee;
+}
+.img_box {
+	//border:1px solid red;
+	margin:15px 0px;
+	display: none;
+	//width:700px;
+	//height:750px;
+	background:hsla(0,0%,100%,0.9);
+	position:fixed;
+	//top:500px;
+	//left:500px;
+	text-align:center;	
+	display:none;
+	left:45%;
+	top:40%;
+	margin-left:-350px;
+	margin-top:-375px;
+	padding:10px;
+	box-shadow: 0 1px 3px rgba(0,0,0,0.2);
+}
+.img_box img {
+	padding:10px;
+	//box-shadow: 0 1px 3px rgba(0,0,0,0.2);
+}
+
+
+/*-----------------footer---------------------------------------*/
 footer {	
 	height:90px;
 	background:#3c3c3c;
@@ -239,3 +316,5 @@ footer p {
 	padding-top:45px;
 }
 	
+
+

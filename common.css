@@ -8,7 +8,7 @@ body {
 a {
 	text-decoration: none;
 }
-
+h1 {font-size: 4em; font-weight: 700; //text-transform:uppercase; }
 .ja-main-tabs,
 .ja-slide {
     display: flex;
@@ -50,13 +50,9 @@ a {
     }*/
 }
 .ja-main-tabs-container--top {
-    
         position: fixed;
         top: 0;
-
 }
-
-
 .ja-main-tab {
     display: flex;
     justify-content: center;
@@ -114,18 +110,17 @@ a {
     background: #000;   
 }
 .title{
-  font-weight: 800;
   color: transparent;
-  font-size:10em;
   background: url("./images/rainbow-nebula.jpg") repeat;
   background-position: 40% 50%;
   -webkit-background-clip: text;
   position:relative;
   text-align:center;
   //line-height:90px;
-  letter-spacing: -8px;
-
+  letter-spacing: -5px;
   }
+#intro>.title {font-size:10em;font-weight: 800;  letter-spacing: -5px;}
+
 /*--------------------scrolldown_button-----------------------------*/
 .scroll_down {
   //position: relative;
